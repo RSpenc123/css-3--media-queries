@@ -1,0 +1,170 @@
+#image-container {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ab/Patates.jpg');
+  
+ 
+  width: 100%;
+  display:flex;
+  height: 900px;
+  flex-direction: column;
+  background-size: cover;
+  
+}
+
+
+.logo{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 30px;
+  margin: 100px;
+  color: yellow
+
+}
+
+.buttons-container{
+  display: flex;
+  align-content: space-between;
+  margin-right: 10px;
+
+}
+
+.button:hover{
+  color:yellow;
+}
+
+.button {
+  width: 100px;
+  text-align: center;
+  padding: 10px 0px;
+  color: white;
+  
+  font-size: 20px;
+  align-items: center;
+  display:flex;
+  transition: .5s
+  
+
+  
+
+}
+
+.header {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color:rgba( 0, 0, 0, .4);
+  border-bottom-style: dashed;
+}
+#hamburger{
+  color: blueviolet;
+  padding-right: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  
+}
+
+.welcome{
+  color: white;
+
+}
+
+.insure{
+  color: white
+
+}
+
+.clickhere{
+  width: 250px;
+  height: 75px;
+  background-color: yellow;
+  border-radius: 100px;
+  display:flex;
+  align-items: center;
+  justify-content: center
+
+}
+
+p {
+
+}
+
+.dropdown {
+  height: 0px; 
+  overflow: hidden; 
+  position: fixed;
+  top: 50px;
+  right: 0;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  
+  flex-direction: column;
+  border-bottom-left-radius: 6px;
+  color: white
+}
+
+.hide-animation {
+animation-name: hide;
+animation-duration: .5s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+.show-animation{
+animation-name: show;
+animation-duration: .5s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+  0%{
+    height: 100px;
+  }
+  100%{
+    height:0px
+  }
+}
+
+@keyframes show {
+  0%{
+    height: 0px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+
+
+
+
+
+@media (max-width: 600px){
+  .buttons-container {
+    display: none;
+  }
+  .header{
+    background-color: black;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 990px){
+  .buttons-container {
+    display: none;
+  }
+  .header{
+    background-color: black;
+  }
+}
+@media (min-width: 990px){
+  #hamburger{
+    display:none;
+  }
+}
